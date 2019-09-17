@@ -1,0 +1,170 @@
+body{
+	background: #262626;
+}
+
+ /* The navigation bar */
+ .navbar {
+	z-index: 666;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0px; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 2em;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+	background: #ddd;
+	color: black;
+  }
+  
+  /* Main content */
+  .main {
+	margin-top: 80px; /* Add a top margin to avoid content overlay */
+  }
+
+.loader {
+	position: relative;
+	align-items: center;
+	margin: 0px 50px;
+}
+
+.device {
+	
+	position: relative;
+	background: whitesmoke;
+	height: 20em;
+	width: auto;
+	overflow: hidden;
+	display: flex;
+    align-items: center;
+    margin: 20px 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.zoneon {
+	position: relative;
+	background: #6d8764;
+	height: 20em;
+	width: auto;
+	overflow: hidden;
+	display: flex;
+    align-items: center;
+    margin: 20px 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.zoneoff {
+	position: relative;
+	background: #f0a30a;
+	height: 20em;
+	width: auto;
+	overflow: hidden;
+	display: flex;
+    align-items: center;
+    margin: 20px 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.zoneonclick {
+	position: relative;
+	background: #a20025;
+	height: 20em;
+	width: auto;
+	overflow: hidden;
+	display: flex;
+    align-items: center;
+    margin: 20px 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	top: 4px;
+}
+
+.cardimage {
+	position: absolute;
+	top: 0px;
+	right: -20px;
+	z-index: 0;
+	animation-delay: 0.5s;
+}
+
+.devicecontent {
+	animation-delay: 0.3s;
+	position: absolute;
+	left: 20px;
+	z-index: 3
+}
+
+.devicename {
+    color: #111;
+    font-size: 2.5em;
+}
+
+.devicedescription {
+	width: 400px;
+	font-size: 1em;
+	line-height: 1.4;
+	color: #262626;
+	margin: 20px 0;
+	
+}
+
+.enforcement {
+	display: inline-block;
+	color: #fff;
+	background: #008a00;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: 1em;
+}
+.devicebutton {
+	width: fit-content;
+	height: fit-content;
+    margin-top: 10px;
+}
+
+.devicebutton a {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	font-size: 1.5em;
+	color: #111;
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 1px solid #111;
+	font-weight: bold;	
+}
+
+.devicebutton a:nth-of-type(1) {
+    border-radius: 50px 50px 50px 50px;
+}
+
+.cart-icon {
+	padding-right: 8px;	
+}
+
+#overlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+  }
+
+ 

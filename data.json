@@ -1,0 +1,77 @@
+{
+  "devices": {
+    "amount": 3,
+    "list": [
+      "jq5q63jos",
+      "n76qpntvk",
+      "3exf4nixr"
+    ],
+    "jq5q63jos": {
+      "path": "devicea/POWER1",
+      "name": "sfeerverlichting",
+      "type": "verlichting",
+      "description": "lichtstraat, inbouwkast en balken",
+      "image": "images/devices/light_hanging.png",
+      "lastseen": "null",
+      "state": "OFF",
+      "guid": "jq5q63jos"
+    },
+    "n76qpntvk": {
+      "path": "devicea/POWER2",
+      "name": "hoofdverlichting",
+      "type": "verlichting",
+      "description": "keuken, living en muziekruimte",
+      "image": "images/devices/light_hanging.png",
+      "lastseen": "null",
+      "state": "OFF",
+      "guid": "n76qpntvk"
+    },
+    "3exf4nixr": {
+      "path": "devicea/POWER3",
+      "name": "hoofdverlichting",
+      "type": "verlichting",
+      "description": "toilet en technische ruimte",
+      "image": "images/devices/light_hanging.png",
+      "lastseen": "null",
+      "state": "OFF",
+      "guid": "3exf4nixr"
+    }
+  },
+  "zones": {
+    "amount": 2,
+    "list": [
+      "svs6umxb2",
+      "svs6umxb1"
+    ],
+    "svs6umxb2": {
+      "name": "alles uit",
+      "description": "alle lichten uit beneden",
+      "command": "OFF",
+      "image": "images/zones/plan.png",
+      "devices": [
+        "jq5q63jos",
+        "n76qpntvk",
+        "3exf4nixr"
+      ]
+    },
+    "svs6umxb1": {
+      "name": "alles aan",
+      "description": "alle lichten aan beneden",
+      "command": "ON",
+      "image": "images/zones/plan.png",
+      "devices": [
+        "jq5q63jos",
+        "n76qpntvk",
+        "3exf4nixr"
+      ]
+    }
+  },
+  "settings": {
+    "mqtt_clientid": "pibackend",
+    "mqtt_username": "iot",
+    "mqtt_password": "Bo&159753",
+    "mqtt_server": "192.168.0.200",
+    "websrv_port": 3000,
+    "socket_emit": "iotmsg"
+  }
+}

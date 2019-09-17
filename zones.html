@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title id="browsertitle">Domos Lite: Houtstraat 11</title>
+
+  <link href="zones.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="clientside_zones.js"></script>
+  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="splash.html">Home</a>
+        <a href="devices.html">Devices</a>
+        <a href="zones.html">Zones</a>
+      </div>
+      <div class="main">
+          <div class="listingzones" id="listingzones"></div>
+          <div id="overlay"></div>
+      </div>
+  <footer>
+    <p> <img class="loader" id="loader" src="images/devices/loader.gif"></p>
+  </footer>
+</body>
+
+</html>
